@@ -1,0 +1,104 @@
+.site {
+  @include justify;
+  @include main-font1;
+
+  &__header{
+    height: 105px;
+    font-size: 14px;
+
+    &-layout{
+      position: relative;
+      width: 100%;
+      height: inherit;
+      margin: 0 auto;
+    }
+
+    &-phone{
+      position: absolute;
+      top: 84px;
+      left: 32px;
+      padding-left: 19px;
+      color: #000;
+      font-size: 15px;
+
+      &:before{
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 13px;
+        height: 21px;
+        background: url("../img/icons-index.png") no-repeat top center;
+        background-size: 21px auto;
+        content: '';
+      }
+
+    }
+
+    &-email{
+      position: absolute;
+      top: 84px;
+      right: 24px;
+      padding-left: 27px;
+      color: #000;
+      font-size: 14px;
+
+      &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 13px;
+        background: url("../img/icons-index.png") no-repeat 50% -23px;
+        background-size: 20px auto;
+        content: '';
+      }
+
+    }
+
+  }
+
+  &__footer{
+    color: $footer-color;
+    background: $footer-background;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: $phone-landscape) {
+  .site {
+
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+  .site {
+
+    &__header{
+      height: 177px;
+    }
+
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+  .site {
+
+  }
+}
+
+@media (min-width: $desktop) {
+  .site {
+
+    &__header{
+      height: 122px;
+
+      &-layout{
+        max-width: 960px;
+      }
+
+    }
+
+  }
+}
+
