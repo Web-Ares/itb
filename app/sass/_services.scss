@@ -1,33 +1,155 @@
-.services {
-  padding-top: 46px;
-  background-color: #666;
+.services{
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #695137;
+  background: -moz-linear-gradient(top,  #676767 0%, #636363 42%, #565656 63%, #414141 84%, #333333 100%);
+  background: -webkit-linear-gradient(top,  #676767 0%,#636363 42%,#565656 63%,#414141 84%,#333333 100%);
+  background: linear-gradient(to bottom,  #676767 0%,#636363 42%,#565656 63%,#414141 84%,#333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#676767', endColorstr='#333333',GradientType=0 );
 
-  &__layout{
-    padding: 0 21px;
-  }
-
-  &__title{
-    margin: 0 20px 16px;
-    color: #f97a00;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-  }
-
+.services__layout{
+  padding: 43px 35px 32px;
+  background:url("../img/bg-revies-us.png")no-repeat center;
+  color: #acacac;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
+.services h2{
+  margin: 0 20px 29px;
+  color: #f97a00;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+.services h3{
+  position: relative;
+  font-weight: 500;
+  font-size: 24px;
+  color: #f98b00;
+  line-height: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  letter-spacing: -1.2px;
 
+  &:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 73px;
+    height: 2px;
+    border-top: 1px solid #8a8a8a;
+    border-bottom: 1px solid #8a8a8a;
+    background: #b7b7b7;
+    content: "";
+  }
+}
+.services h3 span{
+  display: block;
+}
+.services p{
+  margin-bottom: 17px;
+  line-height: 19px;
+}
+.services__pic{
+  width: 72px;
+  height: 100px;
+  margin: 0 auto 15px;
+  background: no-repeat center;
+  background-size: contain;
+}
+.services ul{
+  margin-top: 30px;
+
+  li{
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+.services__item{
+  width: 250px;
+  margin: 0 auto 46px;
+}
+}
 @media (min-width: $tablet-portrait) {
 
   .services {
 
+
+     h2 {
+      margin: 0 20px 56px;
+      font-size: 47px;
+      line-height: 60px;
+    }
+  .services__layout {
+    padding: 81px 17px 32px;
+    text-align: justify;
+    background-position: 50% 81px;
+  }
+  .services__layout:after{
+    display: inline-block;
+    width: 100%;
+    content: "";
+  }
+  .services__item{
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    text-align: left;
+  }
+  .services__pic {
+    width: 107px;
+    height: 142px;
+    margin: 0 auto 36px;
+  }
+  .services_localization .services__pic{
+    margin-top: -13px;
+    margin-bottom: 49px;
+  }
+  h3{
+    width: 169px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+   p {
+    margin-bottom: 17px;
+    line-height: 21px;
+    letter-spacing: 0.1px;
   }
 
-
+}
 }
 
 @media (min-width: $desktop) {
 
+  .services {
+    background: url("../img/bg-services.jpg") no-repeat center;
+    background-size: cover;
 
-
+  .services__layout {
+    width: 992px;
+    margin: 0 auto;
+    padding: 76px 30px 32px;
+    background-image: none;
+  }
+  .services__item {
+    width: 23%;
+  }
+   h2 {
+    margin: 0 20px 65px;
+  }
+   h3 {
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  .services__pic {
+    width: 107px;
+    height: 142px;
+    margin: 0 auto 29px;
+  }
+  .services_localization .services__pic {
+    margin-bottom: 42px;
+  }
+}
 }
