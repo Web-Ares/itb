@@ -1,0 +1,20 @@
+.get-rates {
+  display: none;
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .get-rates {
+    display: block;
+
+  }
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+
+}

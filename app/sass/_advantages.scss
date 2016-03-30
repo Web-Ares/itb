@@ -1,0 +1,81 @@
+.advantages {
+
+  &__item{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    width: 100%;
+    height: 218px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+
+    &_1{
+      background: #695137;
+      background: -moz-linear-gradient(top,  #695137 0%, #725d42 42%, #705b40 63%, #675237 84%, #655035 100%);
+      background: -webkit-linear-gradient(top,  #695137 0%,#725d42 42%,#705b40 63%,#675237 84%,#655035 100%);
+      background: linear-gradient(to bottom,  #695137 0%,#725d42 42%,#705b40 63%,#675237 84%,#655035 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#695137', endColorstr='#655035',GradientType=0 );
+    }
+
+    &_2{
+      background: #9b6a27;
+      background: -moz-linear-gradient(top,  #9b6a27 0%, #8e662b 26%, #8b642d 30%, #8c6430 31%, #88632e 33%, #7e5e35 51%, #7b5e34 51%, #785c37 59%, #6b583a 74%, #6b573c 79%, #68573b 79%, #605340 100%);
+      background: -webkit-linear-gradient(top,  #9b6a27 0%,#8e662b 26%,#8b642d 30%,#8c6430 31%,#88632e 33%,#7e5e35 51%,#7b5e34 51%,#785c37 59%,#6b583a 74%,#6b573c 79%,#68573b 79%,#605340 100%);
+      background: linear-gradient(to bottom,  #9b6a27 0%,#8e662b 26%,#8b642d 30%,#8c6430 31%,#88632e 33%,#7e5e35 51%,#7b5e34 51%,#785c37 59%,#6b583a 74%,#6b573c 79%,#68573b 79%,#605340 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b6a27', endColorstr='#605340',GradientType=0 );
+    }
+
+    &_3{
+      background: #f59c1e;
+      background: -moz-linear-gradient(top,  #f59c1e 0%, #e5921c 23%, #d3861c 40%, #cb8219 46%, #c5801b 52%, #bf7b18 56%, #b4741a 67%, #ac6e17 74%, #a56b19 82%, #a16916 86%, #a06718 91%, #996416 100%);
+      background: -webkit-linear-gradient(top,  #f59c1e 0%,#e5921c 23%,#d3861c 40%,#cb8219 46%,#c5801b 52%,#bf7b18 56%,#b4741a 67%,#ac6e17 74%,#a56b19 82%,#a16916 86%,#a06718 91%,#996416 100%);
+      background: linear-gradient(to bottom,  #f59c1e 0%,#e5921c 23%,#d3861c 40%,#cb8219 46%,#c5801b 52%,#bf7b18 56%,#b4741a 67%,#ac6e17 74%,#a56b19 82%,#a16916 86%,#a06718 91%,#996416 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f59c1e', endColorstr='#996416',GradientType=0 );
+    }
+
+  }
+
+  &__img{
+    width: 68px;
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .advantages {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+
+    &__item{
+      width: 250px;
+      height: 233px;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+
+
+}

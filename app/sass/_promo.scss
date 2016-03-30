@@ -1,0 +1,73 @@
+.promo {
+  height: 397px;
+  padding-top: 40px;
+  background: url("../img/bg-promo.jpg") no-repeat 64% -15px;
+  background-size: auto 110%;
+
+  &__layout{
+    width: 290px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+
+    span{
+      background-color: rgba(248,155,29,.7);
+    }
+
+  }
+
+  &__foreword{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+
+    span{
+      display: block;
+      background-color: rgba(124,125,127,.7);
+    }
+
+  }
+
+  &__avards{
+    position: absolute;
+    width: 100px;
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .promo {
+
+    &__title{
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &__foreword{
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+  }
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+
+}

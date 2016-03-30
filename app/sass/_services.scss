@@ -1,0 +1,33 @@
+.services {
+  padding-top: 46px;
+  background-color: #666;
+
+  &__layout{
+    padding: 0 21px;
+  }
+
+  &__title{
+    margin: 0 20px 16px;
+    color: #f97a00;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .services {
+
+  }
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+
+}
