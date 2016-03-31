@@ -64,9 +64,11 @@
     -webkit-justify-content: center;
     align-items: center;
     -webkit-align-items: center;
+    max-width: 1020px;
+    margin: 0 auto;
 
     &__item{
-      width: 250px;
+      width: 33.3%;
       height: 233px;
     }
 

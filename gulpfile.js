@@ -20,6 +20,7 @@ var paths = {
         {
             dist: 'index.min.js',
             contains: [
+                'app/js/vendors/jquery.nicescroll.min.js',
                 'app/js/jquery.index.js'
             ]
         },

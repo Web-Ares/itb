@@ -1,8 +1,8 @@
 .promo {
   height: 397px;
   padding-top: 40px;
-  background: url("../img/bg-promo.jpg") no-repeat 64% -15px;
-  background-size: auto 110%;
+  background: url("../img/bg-promo.jpg") no-repeat 65% 0;
+  background-size: auto 104%;
 
   &__layout{
     width: 290px;
@@ -50,6 +50,9 @@
 @media (min-width: $tablet-portrait) {
 
   .promo {
+    height: 521px;
+    background-position: 54% 0;
+    background-size: auto 100%;
 
     &__title{
       font-size: 48px;
@@ -68,6 +71,9 @@
 
 @media (min-width: $desktop) {
 
-
+  .promo {
+    height: 524px;
+    background-position: top center;
+  }
 
 }
