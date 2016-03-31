@@ -9,3 +9,21 @@
   }
 
 }
+
+@media (min-width: $tablet-portrait) {
+
+  .logo {
+    top: 13px;
+    left: 15px;
+    width: 269px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .logo {
+    left: 0;
+  }
+
+}

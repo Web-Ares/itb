@@ -2,6 +2,11 @@
   @include justify;
   @include main-font1;
 
+  &:before{
+    opacity: 0;
+    visibility: hidden;
+  }
+
   &__header{
     height: 105px;
     font-size: 14px;
@@ -18,8 +23,9 @@
       top: 84px;
       left: 32px;
       padding-left: 19px;
-      color: #000;
+      color: $site-info;
       font-size: 15px;
+      cursor: default;
 
       &:before{
         position: absolute;
@@ -39,8 +45,9 @@
       top: 84px;
       right: 24px;
       padding-left: 27px;
-      color: #000;
+      color: $site-info;
       font-size: 14px;
+      cursor: default;
 
       &:before{
         position: absolute;
@@ -63,6 +70,27 @@
     text-align: center;
   }
 
+  &_mobile-menu{
+    overflow: hidden;
+    height: 100vh;
+
+    &:before{
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,.7);
+      opacity: 1;
+      visibility: visible;
+      content: '';
+      transition: opacity .3s ease, visibility .3s ease;
+      -webkit-transition: opacity .3s ease, visibility .3s ease;
+    }
+
+  }
+
 }
 
 @media (min-width: $phone-landscape) {
@@ -76,6 +104,39 @@
 
     &__header{
       height: 177px;
+
+      &-phone{
+        top: 51px;
+        left: auto;
+        right: 264px;
+        padding-left: 30px;
+        font-size: 17px;
+
+        &:before{
+          top: -7px;
+          width: 19px;
+          height: 30px;
+          background-size: 31px auto;
+        }
+
+      }
+
+      &-email{
+        top: 50px;
+        right: 81px;
+        padding-left: 40px;
+        font-size: 16px;
+
+        &:before{
+          top: -1px;
+          width: 32px;
+          height: 21px;
+          background-position: 50% -34px;
+          background-size: 30px auto;
+        }
+
+      }
+
     }
 
   }
@@ -95,6 +156,21 @@
 
       &-layout{
         max-width: 960px;
+      }
+
+      &-phone{
+        top: 21px;
+        right: 246px;
+      }
+
+      &-email{
+        top: 21px;
+        right: 66px;
+
+        &:before{
+          top: -3px;
+        }
+
       }
 
     }
