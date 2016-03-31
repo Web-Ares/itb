@@ -372,7 +372,7 @@
             <!-- services__layout -->
             <div class="services__layout">
 
-                <h2>УСЛУГИ</h2>
+                <h2 class="site__title">УСЛУГИ</h2>
 
                 <!-- services__item -->
                 <div class="services__item">
@@ -449,16 +449,16 @@
         <!-- translations-types -->
         <section class="translations-types">
 
+            <h2>МЫ НЕВЕРОЯТНО СИЛЬНЫ</h2>
+
             <!-- stranslations-types__layout -->
             <div class="translations-types__layout">
 
-                <h2>МЫ НЕВЕРОЯТНО СИЛЬНЫ</h2>
+                <a class="translations-types__links" href="#">ТЕХНИЧЕСКИЕ ПЕРЕВОДЫ</a>
 
-                ТЕХНИЧЕСКИЕ ПЕРЕВОДЫ
+                <a class="translations-types__links" href="#">ЛОКАЛИЗАЦИЯ ИГР</a>
 
-                ЛОКАЛИЗАЦИЯ ИГР
-
-                ИТ-ТЕМАТИКА
+                <a class="translations-types__links" href="#">ИТ-ТЕМАТИКА</a>
 
             </div>
             <!-- /translations-types__layout -->
@@ -472,7 +472,32 @@
             <!-- commercial-sentence__layout -->
             <div class="commercial-sentence__layout">
 
-                ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
+                <h2 class="site__title">ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</h2>
+
+                <!--commercial-sentence__form-->
+                <form class="commercial-sentence__form" method="get" action="#" novalidate>
+
+                    <div>
+                        <input type="text" placeholder="Имя"/>
+                        <input type="text" placeholder="Телефон"/>
+                        <input type="email" placeholder="Эл. почта *" required/>
+                    </div>
+                    <textarea placeholder="Сообщение"></textarea>
+
+                    <fieldset class="commercial-sentence__file">
+                        <div class="select-button"></div>
+                        <input type="file" size="43" name="file" id="file" onchange='document.getElementById("fileName").value=this.value'/>
+                        <input type="text" readonly="readonly" id="fileName"/>
+                        <label for="file"><img src="img/load-file-icon.png" width="39" height="20" ALT="Load file">Прикрепить файл</label>
+                    </fieldset>
+
+                    <!--btn-->
+                    <button class="btn" type="submit">ОТПРАВИТЬ</button>
+                    <!--/btn-->
+
+
+                </form>
+                <!--/commercial-sentence-->
 
             </div>
             <!-- /commercial-sentence__layout -->
@@ -513,9 +538,72 @@
             <!-- without-doubt__layout -->
             <div class="without-doubt__layout">
 
-                ВСЁ ЕЩЁ СОМНЕВАЕТЕСЬ?
+                <h2 class="site__title">ВСЁ ЕЩЁ СОМНЕВАЕТЕСЬ?</h2>
 
-                Наша работа – наша гордость!
+                <div class="tabs">
+
+                    <!-- tabs__controls -->
+                    <div class="tabs__controls">
+
+                        <!-- tabs__controls-wrap -->
+                        <div class="tabs__controls-wrap">
+
+                            <div class="active">
+                            <span class="without-doubt__item1">
+                                <span class="without-doubt__pic" style="background-image: url(img/without-doubt01.png)"></span>
+                                <span class="without-doubt__name">СКИДКИ</span>
+                            </span>
+                            </div>
+
+                            <div>
+                            <span class="without-doubt__item2">
+                                <span class="without-doubt__pic" style="background-image: url(img/without-doubt02.png)"></span>
+                                <span class="without-doubt__name">ТЕСТОВОЕ ЗАДАНИЕ</span>
+                            </span>
+                            </div>
+
+                            <div>
+                            <span class="without-doubt__item3">
+                                 <span class="without-doubt__pic" style="background-image: url(img/without-doubt03.png)"></span>
+                                <span class="without-doubt__name">БЕЗ ПРОДАЖНИКОВ</span>
+                            </span>
+                            </div>
+
+                        </div>
+                        <!-- /tabs__controls-wrap -->
+
+                    </div>
+                    <!-- /tabs__controls -->
+
+                    <!-- tabs__wrapper -->
+                    <div class="tabs__wrapper">
+
+                        <div>
+                            <div class="without-doubts__show">
+                                Предоставляем скидку от 100 страниц. И более разжеванный текст должен быть тут. Чтоб оправдать вкладки. Повторяю: Предоставляем скидку от 100 страниц. И более разжеванный текст должен быть тут. Чтоб оправдать вкладки.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="without-doubts__show">
+                                Предоставляем скидку от 100 страниц. И более разжеванный текст должен быть тут. Чтоб оправдать вкладки. Повторяю: Предоставляем скидку от 100 страниц. И более разжеванный текст должен быть тут. Чтоб оправдать вкладки.
+                                Предоставляем скидку от 100 страниц.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="without-doubts__show">
+                                Предоставляем скидку от 100 страниц. И более разжеванный текст должен быть тут. Чтоб оправдать вкладки. Повторяю: Предоставляем скидку от 100 страниц. И более разжеванный текст должен быть тут. Чтоб оправдать вкладки.
+                                Предоставляем скидку от 100 страниц. И более разжеванный текст должен быть тут.
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /tabs__wrapper -->
+
+                </div>
+
+                <span class="without-doubt__pride">Наша работа – наша гордость!</span>
 
             </div>
             <!-- /without-doubt__layout -->
@@ -529,7 +617,191 @@
             <!-- partners__layout -->
             <div class="partners__layout">
 
-                НАС НАШЛИ, ОЦЕНИЛИ И ДОВЕРЯЮТ
+                <h2 class="site__title"><span>НАС НАШЛИ,</span> ОЦЕНИЛИ И ДОВЕРЯЮТ</h2>
+
+                <!-- partners__slider -->
+                <div class="partners__slider">
+
+                    <!-- swiper-container -->
+                    <div class="swiper-container partners__wrap">
+
+                        <div class="swiper-wrapper">
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners01.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners02.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners03.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners04.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners05.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners01.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners02.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners03.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners04.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                            <!-- swiper-slide -->
+                            <div class="swiper-slide">
+
+                                <div class="partners__layout">
+
+                                    <!-- slider__item -->
+                                    <a class="partners__item" href="#">
+                                        <img src="pic/partners05.jpg" alt="slide">
+                                    </a>
+                                    <!-- /slider__item -->
+
+                                </div>
+
+                            </div>
+                            <!-- /swiper-slide -->
+
+                        </div>
+
+                    </div>
+                    <!-- /swiper-container -->
+
+                    <!-- partners__next -->
+                    <div class="partners__next"></div>
+                    <!-- /partners__next -->
+
+                    <!-- partners__prev -->
+                    <div class="partners__prev"></div>
+                    <!-- /partners__prev -->
+
+                </div>
+                <!-- /partners__slider -->
 
             </div>
             <!-- /partners -->
