@@ -15,7 +15,13 @@
     line-height: 36px;
     text-align: center;
   }
-
+  &__item{
+    width: 250px;
+    height: 200px;
+  }
+  &__item_1{
+    background-color: $experience-item-1-back;
+  }
 }
 
 @media (min-width: $tablet-portrait) {
