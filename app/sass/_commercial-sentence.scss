@@ -102,6 +102,7 @@
 }
 }
 @media (min-width: $tablet-landscape) {
+
   .commercial-sentence{
     max-width: 956px;
     margin: 0 auto;
@@ -153,7 +154,7 @@
       vertical-align: middle;
       margin-right: 9px;
     }
-    .select-button{
+    &__file .select-button{
       position: relative;
       background-color: #f39200;
       float: right;
@@ -162,7 +163,7 @@
       vertical-align: middle;
       width: 45px;
     }
-    .select-button:after{
+    &__file .select-button:after{
       position: absolute;
       top: 6px;
       left: 13px;
@@ -184,7 +185,7 @@
       z-index:2;
       cursor: pointer;
     }
-    #fileName{
+    &__file #fileName{
       position: absolute;
       z-index: 3;
       left: -6px;
