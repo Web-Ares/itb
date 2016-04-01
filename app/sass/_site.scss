@@ -1,6 +1,8 @@
 .site {
   @include justify;
   @include main-font1;
+  position: relative;
+  min-height: 100%;
 
   &:before{
     z-index: 1;
@@ -15,6 +17,10 @@
     -webkit-transition: opacity .6s ease;
     background-color: rgba(0,0,0,.7);
     content: '';
+  }
+
+  &:after{
+    height: 317px;
   }
 
   &__header{
@@ -82,10 +88,33 @@
     font-weight: 500;
     text-align: center;
   }
+
   &__footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 317px;
+    padding-top: 58px;
     color: $footer-color;
     background: $footer-background;
     text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+
+    &-icon{
+      width: 33px;
+      height: 58px;
+      margin: 0 auto;
+      background: url('../img/icons-index.png') no-repeat top center;
+    }
+
+    &-phone{
+      font-weight: 600;
+      color: #fff;
+      cursor: default;
+    }
+
   }
 
   &_mobile-menu{
@@ -103,6 +132,14 @@
 
 @media (min-width: $phone-landscape) {
   .site {
+
+    &:after{
+      height: 370px;
+    }
+
+    &__footer{
+      height: 370px;
+    }
 
   }
 }
