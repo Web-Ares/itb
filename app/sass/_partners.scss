@@ -24,10 +24,14 @@
     display: inline-block;
     vertical-align: middle;
     padding-top: 14px;
-    transition: opacity .3s ease;
+    filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
 
-    :hover{
-      opacity: .7;
+    &:hover{
+      filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      -webkit-filter: grayscale(0);
     }
   }
   &__next, &__prev {
@@ -87,7 +91,7 @@
   .partners {
     padding: 105px 0 68px;
 
-    .partners .site__title {
+    .site__title {
       margin: 0 0 89px;
       font-size: 48px;
       line-height: 51px;
@@ -107,14 +111,15 @@
     .partners__next:after, .partners__next:before, .partners__prev:before, .partners__prev:after {
       position: absolute;
       width: 8px;
-      height: 56px;
+      height: 57px;
     }
       &__prev {
       left: 0;
     }
 }
 }
-@media (min-width: $desktop) {
+@media (min-width: $tablet-landscape) {
+
   .partners {
     padding: 74px 0 41px;
 

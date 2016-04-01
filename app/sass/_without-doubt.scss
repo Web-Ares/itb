@@ -132,12 +132,12 @@
 
   }
 
-  .tabs__wrapper div:first-child .without-doubts__show:before{
+  .tabs__wrapper div:first-child .without-doubt__show:before{
     left: 8.5%;
     margin: 0;
   }
 
-  .tabs__wrapper div:last-child .without-doubts__show:before{
+  .tabs__wrapper div:last-child .without-doubt__show:before{
     left: auto;
     right: 9%;
     margin: 0;
@@ -218,11 +218,11 @@
       margin-bottom: 14px;
     }
 
-    .tabs__wrapper div:first-child .without-doubts__show:before {
+    .tabs__wrapper div:first-child .without-doubt__show:before {
       left: 14.5%;
     }
 
-    .tabs__wrapper div:last-child .without-doubts__show:before {
+    .tabs__wrapper div:last-child .without-doubt__show:before {
       right: 14%;
     }
 
@@ -245,7 +245,7 @@
 
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $tablet-landscape) {
   .without-doubt {
     padding: 96px 18px 72px 12px;
 
