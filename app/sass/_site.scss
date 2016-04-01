@@ -103,9 +103,9 @@
     line-height: 24px;
 
     &-icon{
-      width: 33px;
+      width: 36px;
       height: 58px;
-      margin: 0 auto;
+      margin: 0 auto 10px;
       background: url('../img/icons-index.png') no-repeat top center;
     }
 
@@ -128,20 +128,6 @@
 
   }
 
-}
-
-@media (min-width: $phone-landscape) {
-  .site {
-
-    &:after{
-      height: 370px;
-    }
-
-    &__footer{
-      height: 370px;
-    }
-
-  }
 }
 
 @media (min-width: $tablet-portrait) {
@@ -184,11 +170,13 @@
 
     }
 
-  }
-}
+    &__footer{
 
-@media (min-width: $tablet-landscape) {
-  .site {
+      br{
+        display: none;
+      }
+
+    }
 
   }
 }
