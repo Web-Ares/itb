@@ -47,6 +47,7 @@ var Menu = function ( obj ) {
                 click: function ( e ) {
                     if ( $( e.target ).closest( _obj ).length == 0 ){
                         _hideMenu();
+                        return false;
                     }
                 }
             } );
@@ -61,36 +62,36 @@ var Menu = function ( obj ) {
             $( _obj ).getNiceScroll().show();
 
         };
-        _hideMenu = function () {
-            _site.removeClass( 'site_mobile-menu' );
-            _obj.removeClass( 'menu_open' );
-            _btn.removeClass( 'menu-btn_close' );
+    _hideMenu = function () {
+        _site.removeClass( 'site_mobile-menu' );
+        _obj.removeClass( 'menu_open' );
+        _btn.removeClass( 'menu-btn_close' );
+        $( _obj ).getNiceScroll().hide();
+    };
+    _subMenuOpen = function (elem) {
+        var curElem = elem,
+            curContent = curElem.next( 'ul' );
+
+        if( curContent.is( ':visible' ) ){
+            curContent.slideUp(300);
+            curElem.removeClass('active');
+        } else {
+            curContent.slideDown(300);
+            curElem.addClass('active');
+        }
+
+        _checkContentScroll();
+
+    };
+    _checkContentScroll = function() {
+        if ( _layout.height() >  _obj.height()-42 ){
+            _initContentScroll();
+            $( _obj ).getNiceScroll().show();
+            $( _obj ).getNiceScroll().resize();
+        } else {
             $( _obj ).getNiceScroll().hide();
-        };
-        _subMenuOpen = function (elem) {
-            var curElem = elem,
-                curContent = curElem.next( 'ul' );
-
-            if( curContent.is( ':visible' ) ){
-                curContent.slideUp(300);
-                curElem.removeClass('active');
-            } else {
-                curContent.slideDown(300);
-                curElem.addClass('active');
-            }
-
-            _checkContentScroll();
-
-        };
-        _checkContentScroll = function() {
-            if ( _layout.height() >  _obj.height()-42 ){
-                _initContentScroll();
-                $( _obj ).getNiceScroll().show();
-                $( _obj ).getNiceScroll().resize();
-            } else {
-                $( _obj ).getNiceScroll().hide();
-            }
-        },
+        }
+    },
         _initContentScroll = function() {
             $( _obj ).niceScroll( {
                 autohidemode: 'false',
@@ -154,9 +155,7 @@ var Slider = function ( obj ) {
      loop: false,
      loopedSlides: 3,
      slidesPerView: 6
-
      });
-
      }*/
 
     //public properties
