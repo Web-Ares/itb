@@ -47,20 +47,15 @@
     }
 
     &__languages{
-      margin-top: 10px;
-    }
+      text-align: justify;
+      margin-bottom: 8px;
 
-    &__languages .websters-select{
-      display: inline-block;
-      height: 30px;
-      width: 120px;
-      padding: 0;
-      margin: 0 auto;
-      font-size: 24px;
-      color: #1e3230;
-      font-weight: 700;
-      transition: background-color .3s ease, color .3s ease;
-      -webkit-transition: background-color .3s ease, color .3s ease;
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+
     }
 
     &__order {
@@ -88,11 +83,9 @@
       vertical-align: middle;
       position: relative;
       width: 100%;
-      background-color: #e5e5e5;
       cursor: pointer;
-      height: 43px;
+      height: 90px;
       text-align: left;
-      box-shadow: inset -2px 2px 7px #B7B4B4;
     }
 
     &__file label{
