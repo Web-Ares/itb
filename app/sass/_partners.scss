@@ -27,12 +27,15 @@
     filter: grayscale(1);
     -moz-filter: grayscale(1);
     -webkit-filter: grayscale(1);
+    transition: filter .3s ease;
+    -webkit-transition: filter .3s ease;
 
     &:hover{
       filter: grayscale(0);
       -moz-filter: grayscale(0);
       -webkit-filter: grayscale(0);
     }
+
   }
   &__next, &__prev {
     position: absolute;

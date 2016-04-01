@@ -47,7 +47,6 @@ var Menu = function ( obj ) {
                 click: function ( e ) {
                     if ( $( e.target ).closest( _obj ).length == 0 ){
                         _hideMenu();
-                        return false;
                     }
                 }
             } );
