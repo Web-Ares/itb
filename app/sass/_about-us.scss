@@ -27,6 +27,25 @@
 @media (min-width: $tablet-portrait) {
 
   .about-us {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+
+    p{
+      margin-bottom: 25px;
+    }
+
+    &__layout{
+      padding: 0 35px;
+    }
+
+    &__title {
+      width: 50px;
+      margin: 0 0 25px;
+      font-size: 48px;
+      line-height: 48px;
+      text-align: left;
+    }
 
     &__desktop{
       display: block;
@@ -34,11 +53,37 @@
 
   }
 
-
 }
 
 @media (min-width: $desktop) {
 
+  .about-us {
 
+    &__content{
+      float: left;
+      margin-left: 5px;
+      width: 620px;
+    }
+
+    &__layout{
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      width: 1024px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      width: auto;
+    }
+
+    &:after{
+      display: inline-block;
+      width: 100%;
+      content: '';
+    }
+
+  }
 
 }

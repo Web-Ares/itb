@@ -4,35 +4,41 @@
   padding: 0 10px;
   color: $btn-color;
   display: flex;
-  text-align: left;
+  text-align: center;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 14px;
   background: $btn-back;
+  transition: background-color .3s ease;
+  -webkit-transition: background-color .3s ease;
 
   &:hover {
-    background: $btn-back-hover;
+    background-color: rgba(255,255,255,.7);
   }
 
   &:active {
-    color: $btn-color-active;
-    background: $btn-back-active;
+    background-color: rgba(255,255,255,.7);
   }
 
-  &_2 {
-    width: 150px;
-    height: 40px;
-    background: $btn-2-back;
+  &_1 {
+    display: none;
+  }
 
-    &:hover {
-      background: $btn-2-back-hover;
-    }
+}
 
-    &:active {
-      color: $btn-2-color-active;
-      background: $btn-2-back-active;
-    }
+@media (min-width: $tablet-portrait) {
+
+  .btn_1 {
+    display: inline-block;
+    height: 65px;
+    padding-top: 13px;
+    border: 7px solid #f39200;
+    color: #1e3230;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,.2);
   }
 
 }

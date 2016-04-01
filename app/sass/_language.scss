@@ -1,0 +1,41 @@
+.language {
+  position: absolute;
+  top: 8px;
+  right: 60px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+
+  a{
+    display: block;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__eng{
+    background-image: url("../img/flag.png");
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .language {
+    top: 45px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .language {
+    top: 15px;
+    right: 0
+  }
+
+}

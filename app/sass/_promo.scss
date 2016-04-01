@@ -11,13 +11,24 @@
   }
 
   &__title{
+    margin-bottom: 20px;
     color: #fff;
     font-size: 30px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 37px;
+    text-align: left;
 
     span{
+      display: inline-block;
+      width: 244px;
+      padding: 0 11px 7px;
       background-color: rgba(248,155,29,.7);
+
+      &:first-child{
+        width: 215px;
+        padding: 7px 11px 0;
+      }
+
     }
 
   }
@@ -27,19 +38,34 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
+    text-align: left;
 
     span{
-      display: block;
+      display: inline-block;
+      width: 145px;
+      padding: 0 11px 11px;
       background-color: rgba(124,125,127,.7);
+
+      &:first-child{
+        width: 175px;
+        padding: 11px 11px 0;
+      }
+
     }
 
   }
 
   &__avards{
     position: absolute;
+    right: 0;
+    bottom: 0;
     width: 100px;
+    box-shadow: -3px 3px 5px rgba(0,0,0,.5);
+    border-radius: 10px;
+    overflow: hidden;
 
     img{
+      display: block;
       width: 100%;
     }
 
@@ -50,18 +76,60 @@
 @media (min-width: $tablet-portrait) {
 
   .promo {
+    width: auto;
     height: 521px;
+    padding-top: 143px;
     background-position: 54% 0;
     background-size: auto 100%;
 
+    &__layout{
+      width: auto;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 28px 20px;
+    }
+
     &__title{
+      margin-bottom: 13px;
       font-size: 48px;
-      line-height: 48px;
+      line-height: 50px;
+
+      span{
+        width: auto;
+        padding: 0 20px 7px;
+
+        &:first-child{
+          width: auto;
+          padding: 7px 20px 0;
+        }
+
+      }
+
     }
 
     &__foreword{
+      margin-bottom: 48px;
       font-size: 24px;
-      line-height: 30px;
+      line-height: 37px;
+      white-space: pre-line;
+
+      span{
+        width: auto;
+        padding: 0 20px 5px;
+
+        &:first-child{
+          width: auto;
+          padding: 5px 20px 0;
+        }
+
+      }
+
+    }
+
+    &__avards{
+      right: 28px;
+      width: 140px;
+      box-shadow: -3px 3px 15px rgba(0,0,0,.8);
     }
 
   }
@@ -73,7 +141,18 @@
 
   .promo {
     height: 524px;
+    margin: 0 auto;
+    padding-top: 83px;
     background-position: top center;
+
+    &__layout{
+      padding-bottom: 55px;
+    }
+
+    &__foreword{
+      margin-bottom: 77px;
+    }
+
   }
 
 }

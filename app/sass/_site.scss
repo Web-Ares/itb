@@ -3,8 +3,18 @@
   @include main-font1;
 
   &:before{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     opacity: 0;
     visibility: hidden;
+    transition: opacity .6s ease;
+    -webkit-transition: opacity .6s ease;
+    background-color: rgba(0,0,0,.7);
+    content: '';
   }
 
   &__header{
@@ -63,6 +73,7 @@
     }
 
   }
+
   &__title{
     margin: 0 20px 29px;
     color: #f97a00;
@@ -82,18 +93,8 @@
     height: 100vh;
 
     &:before{
-      z-index: 1;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,.7);
       opacity: 1;
       visibility: visible;
-      content: '';
-      transition: opacity .3s ease, visibility .3s ease;
-      -webkit-transition: opacity .3s ease, visibility .3s ease;
     }
 
   }

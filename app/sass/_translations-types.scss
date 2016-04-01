@@ -8,14 +8,18 @@
     padding: 0 45px;
     text-align: center;
   }
+
   h2{
-    padding: 18px 45px 41px;
+    width: 180px;
+    margin: 0 auto;
+    padding: 18px 0 41px;
     font-size: 30px;
     color: #fff;
     line-height: 36px;
     font-weight: 500;
     text-align: center;
   }
+
   &__links{
     display: block;
     position: relative;
@@ -26,7 +30,7 @@
     line-height: 30px;
     font-weight: 700;
 
-    :after{
+    &:after{
       position: absolute;
       visibility: hidden;
       opacity: 0;
@@ -43,32 +47,39 @@
       -webkit-transition: all .3s ease;
     }
 
-    :hover:after{
+    &:hover:after{
       visibility: visible;
       opacity: 1;
     }
+
   }
+
 }
+
 @media (min-width: $tablet-portrait) {
 
   .translations-types{
     padding: 100px 0 148px;
+    background-size: cover;
 
     h2{
       padding: 18px 45px 91px;
       font-size: 48px;
       letter-spacing: -2px;
     }
+
     &__layout{
       padding: 0 41px;
       text-align: justify;
 
-      :after{
+      &:after{
         width: 100%;
         display: inline-block;
         content: "";
       }
+
     }
+
     &__links{
       display: inline-block;
       vertical-align: top;
@@ -85,15 +96,20 @@
   .translations-types {
     padding: 90px 0 70px;
     margin-top: -1px;
-  }
+
     &__layout {
       padding: 0 73px;
     }
+
     h2 {
+      width: auto;
       padding: 18px 0 108px;
     }
+
     &__links {
       width: 25%;
     }
+
+  }
 
 }

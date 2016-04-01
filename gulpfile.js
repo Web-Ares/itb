@@ -21,14 +21,15 @@ var paths = {
             dist: 'index.min.js',
             contains: [
                 'app/js/vendors/jquery.nicescroll.min.js',
+                'app/js/vendors/swiper.jquery.min.js',
+                'app/js/jquery.websters-select.js',
                 'app/js/jquery.index.js'
             ]
         },
         {
             dist: 'ui.min.js',
             contains: [
-                'app/js/jquery.popup.js',
-                'app/js/jquery.websters-select.js'
+                'app/js/jquery.popup.js'
             ]
         }
     ],

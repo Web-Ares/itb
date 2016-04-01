@@ -1,0 +1,87 @@
+.reviews {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 20px;
+  color: #939598;
+  background: url("../img/bg-reviewsbloc.png") center #fbead1;
+  text-align: center;
+
+  &__layout{
+    position: relative;
+    margin: 0 auto;
+    padding: 90px 32px;
+
+    &:before,
+    &:after{
+      position: absolute;
+      width: 19px;
+      height: 38px;
+      background: url('../img/quotes.png') no-repeat 0 0;
+      background-size: 267%;
+      content: '';
+    }
+
+    &:before{
+      top: 35px;
+    }
+
+    &:after{
+      bottom: 35px;
+      right: 32px;
+      background-position: -32px 0;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .reviews {
+    font-size: 24px;
+    line-height: 29px;
+
+    &__layout {
+
+      &:before,
+      &:after{
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .reviews {
+
+    &__layout {
+      width: 960px;
+      padding: 90px;
+
+      &:before,
+      &:after{
+        display: block;
+        width: 33px;
+        height: 65px;
+      }
+
+      &:before{
+        top: 70px;
+        left: 10px;
+      }
+
+      &:after{
+        bottom: 70px;
+        right: 10px;
+        background-position: -55px 0;
+      }
+
+    }
+
+  }
+
+}
