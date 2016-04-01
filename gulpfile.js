@@ -94,24 +94,24 @@ gulp.task('styles', function () {
 gulp.task( 'scripts', function () {
     for ( var i = 0; i < paths.scripts.length; i++ ){
         gulp.src( paths.scripts[ i ].contains )
-            .pipe(sourcemaps.init())
+            //.pipe(sourcemaps.init())
             // .pipe(babel({presets: ['es2015']})) //for js6
             .pipe(uglify())
             .pipe(concat(paths.scripts[ i ].dist))
-            .pipe(sourcemaps.write())
+            //.pipe(sourcemaps.write())
             .pipe(gulp.dest('dist/js/'));
     }
 });
 
 gulp.task('images', function() {
     return gulp.src(paths.images)
-        .pipe(imagemin({optimizationLevel: 5}))
+        //.pipe(imagemin({optimizationLevel: 5}))
         .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('pictures', function() {
     return gulp.src(paths.pictures)
-        .pipe(imagemin({optimizationLevel: 5}))
+        //.pipe(imagemin({optimizationLevel: 5}))
         .pipe(gulp.dest('dist/pic'));
 });
 
