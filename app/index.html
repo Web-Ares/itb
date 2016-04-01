@@ -251,8 +251,11 @@
                         <fieldset>
                             <textarea name="get-rates__message" class="get-rates__message" placeholder="Для оценки стоимости вставьте текст для перевода в это поле"></textarea>
                         </fieldset>
-                        <fieldset>
-                            <input type="file" name="get-rates__file" class="get-rates__file"/>
+                        <fieldset class="get-rates__file">
+                            <div class="select-button"></div>
+                            <input type="file" size="43" name="file" id="get-rates-file" onchange="document.getElementById(&quot;get-rates-fileName&quot;).value=this.value">
+                            <input type="text" readonly="readonly" id="get-rates-fileName">
+                            <label for="file"><img src="img/load-file-icon.png" width="39" height="20" alt="Load file">Прикрепить файл</label>
                         </fieldset>
                         <fieldset>
                             <select name="get-rates__select" class="get-rates__select">
@@ -260,7 +263,7 @@
                                 <option value="1"></option>
                             </select>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="get-rates__languages">
                             <select name="get-rates__language" class="get-rates__language">
                                 <option value="0">английский</option>
                                 <option value="1">французкий</option>
@@ -282,6 +285,7 @@
                         <fieldset>
                             <button type="submit" name="get-rates__order" class="get-rates__order">ОЦЕНИТЬ</button>
                         </fieldset>
+
                     </form>
 
                 </section>
